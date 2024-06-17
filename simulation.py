@@ -13,5 +13,5 @@ def run_bike_simulation(bike_data):
     env.run()
 
 if __name__ == "__main__":
-    bike_data_hour = load_bike_data_hour('../data/hour.csv')
+    bike_data_hour = load_bike_data_hour('data/hour.csv')
     run_bike_simulation(bike_data_hour)

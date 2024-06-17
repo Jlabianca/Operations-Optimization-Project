@@ -1,7 +1,14 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from data_loading import load_bike_data_day, load_bike_data_hour
+
+def plot_results(results):
+    plt.figure(figsize=(10, 6))
+    sns.barplot(data=results, x='Scenario', y='Objective_Value')
+    plt.title('Optimization Results')
+    plt.xlabel('Scenario')
+    plt.ylabel('Objective Value')
+    plt.show()
 
 def plot_day_data(data):
     plt.figure(figsize=(10, 6))
@@ -34,8 +41,10 @@ def plot_hour_data(data):
     plt.show()
 
 if __name__ == "__main__":
-    bike_data_day = load_bike_data_day('../data/day.csv')
-    bike_data_hour = load_bike_data_hour('../data/hour.csv')
-    
+    from data_loading import load_bike_data_day, load_bike_data_hour
+
+    bike_data_day = load_bike_data_day('data/day.csv')
+    bike_data_hour = load_bike_data_hour('data/hour.csv')
+
     plot_day_data(bike_data_day)
     plot_hour_data(bike_data_hour)
