@@ -10,6 +10,9 @@ Optimization: Use optimization techniques to propose improvements.
 Simulation: Simulate real-world processes to identify bottlenecks and inefficiencies.
 Visualization: Create visual representations to communicate findings.
 
+## Visualization 
+If you visit my [Tableau dashboard](https://public.tableau.com/app/profile/joseph.labianca/viz/OptimizingNYCTransportation/Story1), you can see a variety of graphs and visualizations showcasing the analysis and insights from the NYC transportation data, including taxi trips and bike sharing.
+
  ``` bash
 OperationsOptimizationProject/
 │
